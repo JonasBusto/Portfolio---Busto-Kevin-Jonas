@@ -1,0 +1,143 @@
+body {
+    background-color: #DFD3D3;
+}
+
+body>main {
+    font-family: 'roboto';
+}
+
+#adm{
+    font-family: 'regular 400', sans-serif;
+    color: rgb(21, 15, 37);
+}
+#portf{
+    font-family: 'regular 400', sans-serif;
+    color: rgb(21, 15, 37);
+}
+#contact{
+    font-family: 'regular 400', sans-serif;
+    color: rgb(21, 15, 37);
+}
+
+
+
+#inicio {
+    font-family: 'roboto';
+    text-shadow: 2px 2px 5px rgb(94, 79, 79);  
+    text-align: center;  
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+#nav {
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: none; /*quita el puntito de los items*/
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    background-color: #333;
+    border: solid 1px;
+    margin-bottom: 20px;
+}
+
+#nav>li {
+    display: inline;
+}
+
+#nav>li>a {
+    color: white; /*color del texto*/
+    text-align: center; /*centra el texto*/
+    padding: 14px 16px;
+    text-decoration: none;  /*quita la linea sobre el link-texto*/
+    font-size: 20px;
+}
+
+
+/*INICIO IMAGEN*/
+#perfil>img { 
+    border: solid 1px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.83) 0px 6px 6px;
+    
+    /*inicio de centrado de imagen*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*fin de centrado de imagen*/
+}
+/*FIN IMAGEN*/
+
+section>h2 { /* poner el "volver al inicio a la par de H2*/
+    display: inline;
+}
+section>a {
+    text-decoration: none;
+}
+footer>h2 { /* poner el "volver al inicio a la par de H2*/
+    display: inline;
+}
+footer>a {
+    text-decoration: none;
+}
+
+
+#art1 {
+    border-radius: 2px;
+    border: solid 1px;
+    padding: 8px;
+    background-color: antiquewhite; 
+    box-shadow: 0px 5px 8px;
+}
+
+#art1>p {
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+
+.tdp {
+    border-radius: 1px;
+    border: solid 1px;
+    margin-bottom: 7px;
+    box-shadow: 0px 2px 2px;
+}
+
+.tdp>h3 {
+    margin-top: auto;
+    border-bottom: solid 1px;
+    text-align: center;
+    background-color: #35325c;
+    color: #EDEDED;
+    font-size: 18px;
+}
+
+.tdp>p {
+    border-bottom: solid 1px;
+    background-color: #c9e6df;
+    margin-top: -18px;
+    margin-bottom: 3px;
+}
+
+.tdp>a {
+    text-decoration: none;
+}
+
+form {
+    border-radius: 5px;
+    border: solid 1px;
+    background-color: antiquewhite;
+    padding: 5px;
+    font-family: 'roboto', sans-serif;
+    box-shadow: 0px 5px 10px;
+}
+
+#enviar {
+    border-radius: 4px;
+    border: none;
+    background-color: #f44336;
+    color: #DFD3D3;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: center; 
+}
+
