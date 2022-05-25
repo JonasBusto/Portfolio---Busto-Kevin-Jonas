@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/icono_pagina.png">
     <title>Portfolio - Busto, Kevin Jonás</title>
 </head>
 <body>
@@ -11,25 +16,27 @@
         <h1 id="inicio">Kevin Jonás Busto - <i>PORTFOLIO</i></h1>
         <hr>
         <nav>
-            <ul>
+            <ul id="nav">
                 <li><a href="#adm">Acerca de mi</a></li>
                 <li><a href="#portf">Portfolio</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
-        <img src="img/perfil.jpeg" alt="imagen_perfil_busto_kevin">
+        <div id="perfil">
+            <img src="img/perfil.jpeg" alt="imagen_perfil_busto_kevin">
+        </div>
     </header>
     <hr>
     <main>
         <section>
             <h2 id="adm">Acerca de mi</h2>
-            <a href="#inicio">Volver al inicio</a><br><br>
-            <article>
+            <a href="#inicio">(Volver al inicio)</a><br><br>
+            <article id="art1">
                 <p> 
                     Soy Busto Kevin Jonas, y tengo 21 años. Estudio ingeniería en sistemas, 
                     en la Universidad Tecnologica Nacional - Facultad Regional Tucumán (UTN - FRT), 
                     y actualmente estoy cursando 5to año de la carrera.
-                    Ademas, estoy aprendiendo y desarrollando mis conocimientos de programación web en 
+                    Ademas, estoy desarrollando mis conocimientos de programación web en 
                     <a target="_blank" href="https://rollingcodeschool.com/">Rolling Code School.</a><br>
                     Me gustan las matematicas, resolver problemas de dicha rama, y la 
                     programación como tal.
@@ -39,19 +46,19 @@
         <hr>
         <section>
             <h2 id="portf">Portfolio</h2>
-            <a href="#inicio">Volver al inicio</a><br><br>
-            <article>
-                <h3>* <i><u>Titulo del proyecto 1:</u></i></h3>
+            <a href="#inicio">(Volver al inicio)</a><br><br>
+            <article class="tdp">
+                <h3>Titulo del proyecto 1:</h3>
                 <p>Descripción del proyecto 1</p>
                 <a href="url">Enlace al proyecto 1</a>
             </article>
-            <article>
-                <h3>* <i><u>Titulo del proyecto 2:</u></i></h3>
+            <article class="tdp">
+                <h3>Titulo del proyecto 2:</h3>
                 <p>Descripción del proyecto 2</p>
                 <a href="url">Enlace al proyecto 2</a>
             </article>
-            <article>
-                <h3>* <i><u>Titulo del proyecto 3:</u></i></h3>
+            <article class="tdp">
+                <h3>Titulo del proyecto 3:</h3>
                 <p>Descripción del proyecto 3</p>
                 <a href="url">Enlace al proyecto 3</a>
             </article><br>
@@ -60,24 +67,24 @@
     <hr>
     <footer>
         <h2 id="contact">Contacto</h2>
-        <a href="#inicio">Volver al inicio</a><br><br>
+        <a href="#inicio">(Volver al inicio)</a><br><br>
         <form action="https://formspree.io/f/xjvljeko" method="post">
             <label for="name">Ingrese su/s apellido/s</label>
-            <input type="text" name="name" placeholder="Nombre/s" required><br><br>
+            <input type="text" class="text" name="name" placeholder="Ej. Busto" required><br><br>
 
             <label for="lastname">Ingrese su/s nombre/s</label>
-            <input type="text" name="lastname" placeholder="Apellido/s" required><br><br>
+            <input type="text" class="text" name="lastname" placeholder="Kevin Jonás" required><br><br>
 
             <label for="cel">Ingrese su número de celular</label>
-            <input type="tel" name="cel" placeholder="03939819202"><br><br>
+            <input type="tel" class="text" name="cel" placeholder="03939819202"><br><br>
 
             <label for="email">Ingrese su email</label>
-            <input type="email" name="email" placeholder="usuario@email.com" required><br><br>
+            <input type="email" class="text" name="email" placeholder="usuario@email.com" required><br><br>
 
             <label for="message">Ingrese un mensaje</label>
-            <textarea name="" name="message" placeholder="Hola que tal, quisiera..." required></textarea><br><br>
+            <textarea name="message" class="text" name="message" placeholder="Hola que tal, quisiera..." required></textarea><br><br>
 
-            <button type="sumbit">Enviar formulario</button>
+            <button type="sumbit" id="enviar">Enviar formulario</button>
         </form>
     </footer>
     <hr>
