@@ -14,7 +14,6 @@
 <body>
     <header>
         <h1 id="inicio">Kevin Jonás Busto - <i>PORTFOLIO</i></h1>
-        <hr>
         <nav>
             <ul id="nav">
                 <li><a href="#adm">Acerca de mi</a></li>
@@ -30,7 +29,7 @@
     <main>
         <section>
             <h2 id="adm">Acerca de mi</h2>
-            <a href="#inicio">(Volver al inicio)</a><br><br>
+            <a href="#inicio">(Volver al inicio)</a><br>
             <article id="art1">
                 <p> 
                     Soy Busto Kevin Jonas, y tengo 21 años. Estudio ingeniería en sistemas, 
@@ -38,8 +37,8 @@
                     y actualmente estoy cursando 5to año de la carrera.
                     Ademas, estoy desarrollando mis conocimientos de programación web en 
                     <a target="_blank" href="https://rollingcodeschool.com/">Rolling Code School.</a><br>
-                    Me gustan las matematicas, resolver problemas de dicha rama, y la 
-                    programación como tal.
+                    Me gustan las matematicas, resolver problemas de dicha rama (algebra y calculo integral
+                    de preferencia), y la programación como tal.
                 </p>
             </article>
         </section>
@@ -67,24 +66,31 @@
     <hr>
     <footer>
         <h2 id="contact">Contacto</h2>
-        <a href="#inicio">(Volver al inicio)</a><br><br>
+        <a href="#inicio">(Volver al inicio)</a>
         <form action="https://formspree.io/f/xjvljeko" method="post">
-            <label for="name">Ingrese su/s apellido/s</label>
-            <input type="text" class="text" name="name" placeholder="Ej. Busto" required><br><br>
-
-            <label for="lastname">Ingrese su/s nombre/s</label>
-            <input type="text" class="text" name="lastname" placeholder="Kevin Jonás" required><br><br>
-
-            <label for="cel">Ingrese su número de celular</label>
-            <input type="tel" class="text" name="cel" placeholder="03939819202"><br><br>
-
-            <label for="email">Ingrese su email</label>
-            <input type="email" class="text" name="email" placeholder="usuario@email.com" required><br><br>
-
-            <label for="message">Ingrese un mensaje</label>
-            <textarea name="message" class="text" name="message" placeholder="Hola que tal, quisiera..." required></textarea><br><br>
-
-            <button type="sumbit" id="enviar">Enviar formulario</button>
+            <div class="form-input">
+                <label for="name">Ingrese su/s apellido/s</label>
+                <input type="text" class="text" name="name" placeholder="Ej. Busto" required><br><br>
+            </div>
+            <div class="form-input">
+                <label for="lastname">Ingrese su/s nombre/s</label>
+                <input type="text" class="text" name="lastname" placeholder="Kevin Jonás" required><br><br>
+            </div>
+            <div class="form-input">
+                <label for="cel">Ingrese su número de celular</label>
+                <input type="tel" class="text" name="cel" placeholder="03939819202"><br><br>
+            </div>
+            <div class="form-input"> 
+                <label for="email">Ingrese su email</label>
+                <input type="email" class="text" name="email" placeholder="usuario@email.com" required><br><br>
+            </div>
+            <div class="form-input">
+                <label for="message">Ingrese un mensaje</label>
+                <textarea name="message" class="text" name="message" placeholder="Hola que tal, quisiera..." required></textarea><br><br>
+            </div>
+            <div class="form-input">
+                <button type="sumbit" id="enviar">Enviar formulario</button>
+            </div>            
         </form>
     </footer>
     <hr>
