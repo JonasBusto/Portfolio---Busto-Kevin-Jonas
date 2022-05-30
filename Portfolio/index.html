@@ -68,27 +68,33 @@
         <h2 id="contact">Contacto</h2>
         <a href="#inicio">(Volver al inicio)</a>
         <form action="https://formspree.io/f/xjvljeko" method="post">
-            <div class="form-input">
-                <label for="name">Ingrese su/s apellido/s</label>
-                <input type="text" class="text" name="name" placeholder="Ej. Busto" required><br><br>
+            <div class="flex-container">
+                <div>
+                    <label for="name">Ingrese su/s apellido/s</label>
+                    <input type="text" class="text" name="name" placeholder="Ej. Busto" required><br><br>
+                </div>
+                <div>
+                    <label for="lastname">Ingrese su/s nombre/s</label>
+                    <input type="text" class="text" name="lastname" placeholder="Kevin Jonás" required><br><br>
+                </div>
             </div>
-            <div class="form-input">
-                <label for="lastname">Ingrese su/s nombre/s</label>
-                <input type="text" class="text" name="lastname" placeholder="Kevin Jonás" required><br><br>
-            </div>
-            <div class="form-input">
-                <label for="cel">Ingrese su número de celular</label>
-                <input type="tel" class="text" name="cel" placeholder="03939819202"><br><br>
-            </div>
-            <div class="form-input"> 
-                <label for="email">Ingrese su email</label>
-                <input type="email" class="text" name="email" placeholder="usuario@email.com" required><br><br>
-            </div>
-            <div class="form-input">
+            
+            <div class="flex-container">
+                <div>
+                    <label for="cel">Ingrese su número de celular</label>
+                    <input type="tel" class="text" name="cel" placeholder="03939819202"><br><br>
+                </div>
+                <div> 
+                    <label for="email">Ingrese su email</label>
+                    <input type="email" class="text" name="email" placeholder="usuario@email.com" required><br><br>
+                </div>
+            </div>        
+            
+            <div class="flex-container">
                 <label for="message">Ingrese un mensaje</label>
                 <textarea name="message" class="text" name="message" placeholder="Hola que tal, quisiera..." required></textarea><br><br>
             </div>
-            <div class="form-input">
+            <div class="flex-container">
                 <button type="sumbit" id="enviar">Enviar formulario</button>
             </div>            
         </form>
