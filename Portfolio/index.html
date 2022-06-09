@@ -8,28 +8,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link rel="icon" href="/img/icono_pagina.png">
     <title>Portfolio - Busto, Kevin Jonás</title>
+    <script src="https://kit.fontawesome.com/405d5358c0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1 id="inicio">Kevin Jonás Busto - <i>PORTFOLIO</i></h1>
         <nav>
             <ul id="nav">
-                <li><a href="#adm">Acerca de mi</a></li>
-                <li><a href="#portf">Portfolio</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li id="nav-adm"><a href="#adm">Acerca de mi | <i class="fa-solid fa-user-large"></i></a></li>
+                <li id="nav-portf"><a href="#portf">Portfolio | <i class="fa-solid fa-briefcase"></i></a></li>
+                <li id="hacer-espacio"></li>
+                <li id="nav-contact"><a href="#contact">Contacto | <i class="fa-solid fa-square-envelope"></i></a></li>
             </ul>
         </nav>
-        <div id="perfil">
-            <img src="img/perfil.jpeg" alt="imagen_perfil_busto_kevin">
+        <div class="header-intro">
+            <div id="intro">
+                <p>Hola, soy <span class="color-name">Kevin Jonás Busto</span>. <br>Bienvenido a mi Portfolio.</p>
+            </div>
+            <div id="perfil">
+                <img src="img/perfil.jpeg" alt="imagen_perfil_busto_kevin">
+            </div>
         </div>
     </header>
-    <hr>
     <main>
-        <section>
-            <h2 id="adm">Acerca de mi</h2>
-            <a href="#inicio">(Volver al inicio)</a><br>
+        <section id="adm-display">
+            <div class="edit-titulo">
+                <h2 id="adm">ACERCA DE MI</h2>
+                <div>
+                    <a href="#nav">Volver al inicio | <i class="fa-solid fa-turn-up"></i></a>
+                </div>
+            </div>
             <article id="art1">
                 <p> 
                     Soy Busto Kevin Jonas, y tengo 21 años. Estudio ingeniería en sistemas, 
@@ -37,67 +49,79 @@
                     y actualmente estoy cursando 5to año de la carrera.
                     Ademas, estoy desarrollando mis conocimientos de programación web en 
                     <a target="_blank" href="https://rollingcodeschool.com/">Rolling Code School.</a><br>
-                    Me gustan las matematicas, resolver problemas de dicha rama (algebra y calculo integral
-                    de preferencia), y la programación como tal.
+                    <!-- Me gustan las matematicas, resolver problemas de dicha rama (algebra y calculo integral
+                    de preferencia), y la programación como tal. -->
                 </p>
             </article>
         </section>
-        <hr>
-        <section>
-            <h2 id="portf">Portfolio</h2>
-            <a href="#inicio">(Volver al inicio)</a><br><br>
-            <article class="tdp">
-                <h3>Titulo del proyecto 1:</h3>
-                <p>Descripción del proyecto 1</p>
-                <a href="url">Enlace al proyecto 1</a>
-            </article>
-            <article class="tdp">
-                <h3>Titulo del proyecto 2:</h3>
-                <p>Descripción del proyecto 2</p>
-                <a href="url">Enlace al proyecto 2</a>
-            </article>
-            <article class="tdp">
-                <h3>Titulo del proyecto 3:</h3>
-                <p>Descripción del proyecto 3</p>
-                <a href="url">Enlace al proyecto 3</a>
-            </article><br>
+        <section id="portf-display">
+            <div class="edit-titulo">
+                <h2 id="portf">PORTFOLIO</h2>
+                <div>
+                    <a href="#nav">Volver al inicio | <i class="fa-solid fa-turn-up"></i></a>
+                </div>
+            </div>
+            <div id="proyectos-display">
+                <article class="tdp">
+                    <h3>Titulo del proyecto 1:</h3>
+                    <p>**Descripción del proyecto 1**</p>
+                    <button><a href="url">Enlace al proyecto 1 | <i class="fa-solid fa-folder-open"></i></a></button>
+                </article>
+                <article class="tdp">
+                    <h3>Titulo del proyecto 2:</h3>
+                    <p>**Descripción del proyecto 2**</p>
+                    <button><a href="url">Enlace al proyecto 2 | <i class="fa-solid fa-folder-open"></i></a></button>
+                </article>
+                <article class="tdp">
+                    <h3>Titulo del proyecto 3:</h3>
+                    <p>**Descripción del proyecto 3**</p>
+                    <button><a href="url">Enlace al proyecto 3 | <i class="fa-solid fa-folder-open"></i></a></button>
+                </article>
+            </div>
         </section>
     </main>
-    <hr>
     <footer>
-        <h2 id="contact">Contacto</h2>
-        <a href="#inicio">(Volver al inicio)</a>
-        <form action="https://formspree.io/f/xjvljeko" method="post">
-            <div class="flex-container">
-                <div>
-                    <label for="name">Ingrese su/s apellido/s</label>
-                    <input type="text" class="text" name="name" placeholder="Ej. Busto" required><br><br>
-                </div>
-                <div>
-                    <label for="lastname">Ingrese su/s nombre/s</label>
-                    <input type="text" class="text" name="lastname" placeholder="Kevin Jonás" required><br><br>
-                </div>
+        <div class="edit-titulo">
+            <h2 id="contact">CONTACTO</h2>
+            <div>
+                <a href="#nav">Volver al inicio | <i class="fa-solid fa-turn-up"></i></a>
             </div>
-            
-            <div class="flex-container">
-                <div>
-                    <label for="cel">Ingrese su número de celular</label>
-                    <input type="tel" class="text" name="cel" placeholder="03939819202"><br><br>
+        </div>       
+        <form action="https://formspree.io/f/xjvljeko" method="post"">
+            <div class="form-flex">
+                <div id="grupo-opcion-1">
+                    <div class="opcion-form">
+                        <label for="name">Ingrese su/s apellido/s</label>
+                        <input type="text" class="text" name="name" placeholder="Apellido/s" required><br><br>
+                    </div>
+                    <div class="opcion-form">
+                        <label for="lastname">Ingrese su/s nombre/s</label>
+                        <input type="text" class="text" name="lastname" placeholder="Nombre/s" required><br><br>
+                    </div>
                 </div>
-                <div> 
-                    <label for="email">Ingrese su email</label>
-                    <input type="email" class="text" name="email" placeholder="usuario@email.com" required><br><br>
-                </div>
-            </div>        
-            
-            <div class="flex-container">
+                <div id="grupo-opcion-2">
+                    <div class="opcion-form">
+                        <label for="cel">Ingrese su número de celular</label>
+                        <input type="tel" class="text" name="cel" placeholder="03939819202"><br><br>
+                    </div>
+                    <div class="opcion-form"> 
+                        <label for="email">Ingrese su email</label>
+                        <input type="email" class="text" name="email" placeholder="ejemplo@mail.com" required><br><br>
+                    </div>
+                </div>         
+            </div>
+             
+            <div class="opcion-form">
                 <label for="message">Ingrese un mensaje</label>
-                <textarea name="message" class="text" name="message" placeholder="Hola que tal, quisiera..." required></textarea><br><br>
-            </div>
-            <div class="flex-container">
-                <button type="sumbit" id="enviar">Enviar formulario</button>
-            </div>            
+                <textarea name="message" class="text" name="message" placeholder="Hola que tal, quisiera..." required></textarea>
+            </div>        
+            <div class="opcion-form">
+                <button type="sumbit" id="enviar">Enviar formulario | <i class="fa-solid fa-paper-plane"></i></button>
+            </div>   
         </form>
+        <div class="footer-copyright">
+            <h3>Copyright Busto Kevin Jonás - 2022</h3>
+        </div>
     </footer>
     <hr>
 </body>
